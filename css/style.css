@@ -1,5 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /*background-color: rgb(255, 240, 200);*/
+  background-image: url("../images/gold-blur-4.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.container {
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 10px 0 0 50px;
+}
+
+header {
+  background-color: rgb(255, 255, 255, 0.1);
+  margin: 50px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  background-color: rgb(255, 255, 255, 0.1);
+  margin: 50px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+section {
+  margin: 10px 0 0 0;
+}
+
 p {
   text-indent: 25px;
-  margin: 0 0 0 0; /*Сверху 0, снизу 10px*/
+  margin: 0; /*Сверху,вправо,снизу, влево*/
+  padding: 0;
   line-height: 1.5; /*высота строки*/
+}
+
+li {
+  list-style: none;
+  padding: 10px 0 0 20px;
+}
+
+footer {
+  max-width: 1200px;
+  margin: 10px auto;
 }
