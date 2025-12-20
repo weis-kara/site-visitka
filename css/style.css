@@ -1,0 +1,5 @@
+p {
+  text-indent: 25px;
+  margin: 0 0 0 0; /*Сверху 0, снизу 10px*/
+  line-height: 1.5; /*высота строки*/
+}
