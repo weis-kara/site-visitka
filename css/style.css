@@ -41,7 +41,7 @@ section {
   align-items: center;
 }
 #skills {
-  margin-left: 640px;
+  margin-left: 80px;
 }
 .my_photo {
   flex: 1;
@@ -67,7 +67,7 @@ li {
 }
 
 #projects {
-  margin-left: 240px;
+  margin-left: 40px;
 }
 footer {
   max-width: 1200px;
