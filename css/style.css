@@ -5,27 +5,27 @@
 }
 body {
   /*background-color: rgb(255, 240, 200);*/
-  background-image: url("../images/gold-blur-4.jpg");
+  background-image: url("../images/milk.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
 }
 .container {
   max-width: 1200px;
-  margin: 10px auto;
-  padding: 10px 0 0 50px;
+  margin: 0 auto;
+  padding: 30px 30px 40px 60px;
 }
 
 header {
-  background-color: rgb(255, 255, 255, 0.1);
-  margin: 50px auto;
+  background-color: rgb(255, 255, 255, 0.2);
+  margin-bottom: 140px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 main {
-  background-color: rgb(255, 255, 255, 0.1);
-  margin: 50px auto;
+  background-color: rgb(255, 255, 255, 0.2);
+  margin-top: 0;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
@@ -34,19 +34,43 @@ section {
   margin: 10px 0 0 0;
 }
 
+#about {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+#skills {
+  margin-left: 640px;
+}
+.my_photo {
+  flex: 1;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 45%;
+}
+.txt_about {
+  flex: 4;
+}
+
 p {
   text-indent: 25px;
   margin: 0; /*Сверху,вправо,снизу, влево*/
   padding: 0;
   line-height: 1.5; /*высота строки*/
 }
-
 li {
   list-style: none;
   padding: 10px 0 0 20px;
 }
 
+#projects {
+  margin-left: 240px;
+}
 footer {
   max-width: 1200px;
-  margin: 10px auto;
+  margin: 0 auto;
+  padding: 30px 30px 40px 60px;
 }
