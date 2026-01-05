@@ -3,19 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* ===== BODY ===== */
 body {
-  /*background-color: rgb(255, 240, 200);*/
   background-image: url("../images/milk.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  /*font-family: "Lora", serif;*/
+
   font-family: "Lora", serif;
   font-size: 18px;
   line-height: 1.7;
   color: #222;
 }
 
+/* ===== HEADERS ===== */
 h1,
 h2,
 h3 {
@@ -38,69 +40,145 @@ h2 {
 h3 {
   font-size: clamp(20px, 2vw, 24px);
 }
+
+/* ===== CONTAINER ===== */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 30px 30px 40px 60px;
+  padding: 30px 40px 40px 40px;
 }
-/* Вертикальные margin схлопываются.
-   Поэтому расстояние между header и main
-   задаём только margin-bottom у header */
+
+/* ===== HEADER / MAIN ===== */
 header {
-  background-color: rgb(255, 255, 255, 0.2);
-  margin-bottom: 140px;
+  background-color: rgba(255, 255, 255, 0.25);
+  margin-bottom: 100px;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 main {
-  background-color: rgb(255, 255, 255, 0.2);
-  margin-top: 0;
+  background-color: rgba(255, 255, 255, 0.25);
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 section {
-  margin: 10px 0 0 0;
+  margin-top: 20px;
 }
 
+/* ===== ABOUT BLOCK ===== */
 #about {
   display: flex;
   gap: 20px;
   justify-content: center;
   align-items: center;
 }
-#skills {
-  margin-left: 80px;
-}
+
 .my_photo {
   flex: 2;
 }
+
 img {
   max-width: 100%;
   height: auto;
   border-radius: 45%;
 }
+
 .txt_about {
   flex: 6;
 }
 
+/* ===== TEXT ===== */
 p {
   text-indent: 25px;
-  margin: 0; /*Сверху,вправо,снизу, влево*/
+  margin: 0;
   padding: 0;
-  line-height: 1.5; /*высота строки*/
+  line-height: 1.6;
 }
+
+/* ===== LISTS ===== */
+ul,
+ol {
+  margin-left: 30px;
+}
+
 li {
-  list-style: none;
-  padding: 10px 0 0 20px;
+  padding-top: 8px;
+}
+
+/* ===== SECTIONS OFFSET ===== */
+#skills {
+  margin-left: 20px;
 }
 
 #projects {
-  margin-left: 40px;
+  margin-left: 20px;
 }
+
+/* ===== FOOTER ===== */
 footer {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 30px 30px 40px 60px;
+  margin: 30px auto 40px auto;
+  padding: 20px 40px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+/* ===== ADAPTIVE ===== */
+
+/* --- Планшеты --- */
+@media (max-width: 992px) {
+  .container {
+    padding: 25px;
+  }
+
+  header {
+    margin-bottom: 70px;
+  }
+}
+
+/* --- Узкие планшеты и большие телефоны --- */
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  p {
+    text-indent: 0;
+  }
+
+  img {
+    max-width: 260px;
+  }
+
+  #skills,
+  #projects {
+    margin-left: 0;
+  }
+}
+
+/* --- Телефоны --- */
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .container {
+    padding: 18px;
+  }
+
+  img {
+    max-width: 220px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
 }
