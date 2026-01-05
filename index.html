@@ -3,16 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+
     <title>Моя визитка</title>
+
+    <!-- Шрифты -->
     <link
       href="https://fonts.googleapis.com/css2?family=Alice&family=Lora:wght@400;500;700&display=swap"
-      ;
       rel="stylesheet"
     />
+
+    <!-- Иконки -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <header class="container">
+
+  <!-- якорь для кнопки "наверх" -->
+  <body id="top">
+    <header class="container fade">
       <h3>Давайте познакомимся</h3>
 
       <h1>Светлана Караева</h1>
@@ -20,19 +32,23 @@
         Биофизик и администратор SQL баз данных. Изучаю Python и веб-разработку
       </p>
     </header>
-    <main class="container">
+
+    <main class="container fade">
       <section id="about">
         <div class="my_photo">
           <img src="images/Фото003-no.png" alt="Моя Фотография" />
         </div>
+
         <div class="txt_about">
           <h2>Немного о себе</h2>
+
           <p>
             По образованию я биофизик, но теперь уже более 10 лет работаю
             администратором баз данных SQL в системе государственной статистики.
             В последние годы у меня появился большой интерес к программированию
             и веб-разработке.
           </p>
+
           <p>
             В связи с этим, для начала я прошла полугодовой онлайн-курс по
             веб-дизайну, где научилась создавать простые сайты на Tilda и
@@ -41,43 +57,57 @@
           </p>
         </div>
       </section>
-      <section id="skills">
+
+      <section id="skills" class="fade">
         <h2>Навыки, которыми я владею</h2>
         <ul>
-          <li>SQL</li>
-          <li>Статистический анализ данных</li>
-          <li>Git, GitHub</li>
-          <li>HTML,CSS</li>
-          <li>Python</li>
+          <li><i class="fa-solid fa-database"></i> SQL</li>
+          <li><i class="fa-solid fa-chart-line"></i> Статистический анализ</li>
+          <li><i class="fa-brands fa-git-alt"></i> Git, GitHub</li>
+          <li><i class="fa-brands fa-html5"></i> HTML, CSS</li>
+          <li><i class="fa-brands fa-python"></i> Python</li>
         </ul>
       </section>
-      <section id="projects">
+
+      <section id="projects" class="fade">
         <h2>Мои Frontend-разработки</h2>
         <ol>
           <li>
-            <a href="https://weis-kara.github.io/site-visitka/"
-              >Сайт-визитка (этот) - личный проект</a
-            >
+            <a href="https://weis-kara.github.io/site-visitka/" target="_blank">
+              🌿 Сайт-визитка (этот) — личный проект
+            </a>
           </li>
+
           <li>
-            <a href="https://weis-kara.github.io/calculator/"
-              >Онлайн калькулятор - учебный проект</a
-            >
+            <a href="https://weis-kara.github.io/calculator/" target="_blank">
+              🧮 Онлайн-калькулятор — учебный проект
+            </a>
           </li>
         </ol>
       </section>
-      <section id="contacts">
+
+      <section id="contacts" class="fade">
         <h2>Контакты</h2>
-        <a
-          href="mailto:kasia5865.weis@gmail.com"
-          title="kasia5865.weis@gmail.com"
-          >Написать мне</a
-        >
-        <br />
-        <a href="https://vk.com/sve4ka_weiss">Vk</a>
+
+        <p>
+          <a href="mailto:kasia5865.weis@gmail.com" title="Написать на Email">
+            <i class="fa-solid fa-envelope"></i> Написать мне
+          </a>
+        </p>
+
+        <p>
+          <a href="https://vk.com/sve4ka_weiss" target="_blank">
+            <i class="fa-brands fa-vk"></i> VK
+          </a>
+        </p>
       </section>
     </main>
-    <br />
-    <footer>&copy; 2025 Svetlana Karaeva</footer>
+
+    <footer class="fade">&copy; 2025 Светлана Караева</footer>
+
+    <!-- Кнопка НАВЕРХ -->
+    <a href="#top" class="up-btn" title="Наверх">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
   </body>
 </html>
